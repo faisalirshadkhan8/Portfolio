@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* CSS Custom Properties for Theme Support */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 0 0% 0%; /* Pure black for your portfolio */
+  --foreground: 0 0% 98%; /* Almost white text */
+  --card: 0 0% 5%; /* Very dark gray for cards */
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 5%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 10%; /* Dark gray */
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 10%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 0 0% 10%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 20%; /* Subtle border */
+  --input: 0 0% 15%;
+  --ring: 217.2 91.2% 59.8%;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Let components control their own backgrounds */
+  background-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Let components control backgrounds, only set text color */
+  background-color: transparent;
+  color: hsl(var(--foreground));
+  overflow-x: hidden;
+  /* Add transition for smooth theme switching */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Remove the conflicting theme-specific body classes */
+/* body.light and body.dark are no longer needed since we use CSS custom properties */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  /* Let components control their own backgrounds */
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Remove default styles that might conflict with Tailwind */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
