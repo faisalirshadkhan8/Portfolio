@@ -46,7 +46,7 @@ const CodeEditor = () => {
       initial={{ opacity: 0, y: 20, scale: 0.98 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
-      className="relative w-full h-[350px] lg:h-[400px] lg:ml-16 lg:mr-16 space-y-0 text-left"
+      className="relative w-full h-[260px] sm:h-[320px] lg:h-[400px] lg:ml-16 lg:mr-16 space-y-0 text-left"
     >
       {/* Gradient Border Effect */}
       <motion.div
