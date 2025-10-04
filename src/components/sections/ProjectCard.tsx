@@ -79,4 +79,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, te
   );
 };
 
-export default ProjectCard;
+export default React.memo(ProjectCard);

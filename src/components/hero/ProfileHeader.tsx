@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 import profileImage from '../../assets/cv.jpg';
 

@@ -2,7 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Home, User, Briefcase, Mail } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 gsap.registerPlugin(ScrollToPlugin);
 
 const Navigation = () => {
